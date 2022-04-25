@@ -7,15 +7,15 @@ module.exports = {
         if(args.length == 0) {
 			// If the user sent us no arguments, presume they want help using this command
 			msg = "This is the help section for the fuel calculator.\n";
-			msg = "This calculator is used so that you can calculate how much fuel you will use on a road trip\n";
-			msg = "The arguments you use with this calculator is as follows:\n";
-			msg = "1. The distance between your two locations (Km)\n";
-			msg = "2. The fuel consumption of your car (L/100Km)\n";
-			msg = "3. The maximum fuel tank capacity of your car (L)\n";
-			msg = "4. The number of little fuel lines on your fuel gauge in total\n";
-			msg = "5. The number of little fuel lines left in your fuel tank\n";
-			msg = "6. A simple little yes/no as to whether or not your trip is also a return trip\n";
-			
+			msg += "This calculator is used so that you can calculate how much fuel you will use on a road trip\n";
+			msg += "The arguments you use with this calculator is as follows:\n";
+			msg += "1. The distance between your two locations (Km)\n";
+			msg += "2. The fuel consumption of your car (L/100Km)\n";
+			msg += "3. The maximum fuel tank capacity of your car (L)\n";
+			msg += "4. The number of little fuel lines on your fuel gauge in total\n";
+			msg += "5. The number of little fuel lines left in your fuel tank\n";
+			msg += "6. A simple little yes/no as to whether or not your trip is also a return trip\n";
+			msg += "A little note for anyone living in the yee-haw countries. You can change the units to miles if you want, the calculator will still work";
             message.channel.send(msg);
 		} else if (args.length != 6) {
 			// If the user sent us the wrong number of arguments, scream at them and threaten their family
